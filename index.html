@@ -33,25 +33,184 @@
   <body>
     <!-- Añado en el header e incluyo un logo y una barra de navegación con distintas secciones-->
     <header>
+      <!-- Logo de la web -->
       <img
         src="./assets/img/logo.jpg"
         alt="logo representativo de futbol para la web"
         width="200"
       />
-
+      <!-- Añado un nav con enlaces de navegación que redirigen a cada una de las secciones correspondientes -->
       <nav>
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre nosotros</a></li>
-          <li><a href="#">Historia</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#ultimasnoticias">Últimas noticias</a></li>
+          <li><a href="#proximospartidos">Próximos partidos</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Contenido principal de la web -->
     <main>
+      <!-- Título principal -->
       <h1>Web de fútbol</h1>
-
+      <!-- Fecha de creación de web -->
+      <time datetime="2024-05-12">12 de mayo de 2024</time>
+      <!-- Secciones con la histotia, noticias y partidos -->
+      <section>
+        <!-- Título secundario en web, principal en la sección -->
+        <h2 id="historia">Historia del fúbol</h2>
+        <!--  Párrafo sobre la historia del fútbol -->
+        <p>
+          El fútbol, un juego que trasciende culturas y fronteras, tiene sus
+          raíces en juegos antiguos que involucraban el uso de una pelota y los
+          pies para marcar puntos. Sin embargo, el fútbol moderno se desarrolló
+          en el siglo XIX en Inglaterra, donde se establecieron las reglas
+          básicas del juego. La popularidad del fútbol creció rápidamente y se
+          extendió por todo el mundo, convirtiéndose en el deporte más
+          practicado y seguido a nivel global. Las ligas profesionales surgieron
+          en varios países, y eventos como la Copa Mundial de la FIFA capturan
+          la atención de millones de personas cada cuatro años. El fútbol no
+          solo es un deporte, sino también un fenómeno cultural que une a
+          personas de diferentes orígenes y creencias. Desde los derbis locales
+          hasta los enfrentamientos internacionales, el fútbol ha generado
+          emociones intensas, momentos históricos y héroes legendarios que
+          perdurarán en la memoria colectiva para siempre.
+        </p>
+        <!-- Añado imagen con pie de foto -->
+        <figure>
+          <img
+            src="./assets/img/balon.jpg"
+            alt="Balón de cuero 1930"
+            width="250"
+          />
+          <figcaption>Balón del Mundial de Uruguay 1930</figcaption>
+        </figure>
+      </section>
+      <!-- Abro otra sección para el apartado de últimas noticias -->
+      <section>
+        <!-- Título secundario en web, principal en la sección -->
+        <h2 id="ultimasnoticias">Últimas noticias</h2>
+        <!-- Añado un artículo por cada noticia -->
+        <article>
+          <!-- Título secundario -->
+          <h3>Mercado de verano a la espera de Mbappé</h3>
+          <!-- Párrafos con la Información de la noticia -->
+          <p>
+            Últimos acuerdos para el cierre del fichaje de
+            <strong>Mbappé</strong> por el Real Madrid.
+          </p>
+          <p>
+            Según medios franceses el astro francés llegará al Real Madrdid este
+            verano y empezará una nueva etapa deportiva en la capital española.
+          </p>
+          <!-- Imagen relacionada con la noticia -->
+          <img
+            src="./assets/img/Mbappe.jpg"
+            alt="Imagen de Mbappé aplaudiendo"
+            width="150"
+          />
+          <!-- Cita del futbolista -->
+          <p>
+            Palabras de Mbappé:
+            <cite
+              >Está será mi última temporada en el Parque de los Príncipes</cite
+            >
+          </p>
+        </article>
+        <article>
+          <h3>Finalizadas las obras en el Bernabéu</h3>
+          <p>
+            El nuevo estadio Santiago Bernabéu tnedrá techo cerrado y ampliará
+            su aforo en <strong>5000 nuevos asientos</strong>. Inlcluirá una
+            zona de ocio y otra parte para uso comercial.
+          </p>
+          <p>Se prevé que pueda ser usado para conciertos y grandes eventos.</p>
+          <!-- Iframe explicativo de la noticia -->
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/RD7bN6-J6Zk?si=NhFhPEJcr7XlXjKs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            importance="high"
+          ></iframe>
+          <em>Santiago Bernabéu tras su reforma</em>
+        </article>
+        <article>
+          <h3>El Real Madrid pasa a la final de la Champions League</h3>
+          <p>
+            El Real Madrid consigue vencer por 2-1 al Bayern de Munich con
+            doblete de Joselu
+          </p>
+          <p>
+            El club merengue está a un paso de conseguir su
+            <strong>decimoquinto</strong> título de Europa
+          </p>
+          <img
+            src="./assets/img/champions.jpg"
+            alt="Joselu celebrando el gol son sus compañeros"
+            width="300"
+          />
+          <!-- Audio narrando el gol -->
+          <audio src="./assets/audio/Joselu.mp3" controls></audio>
+        </article>
+      </section>
+      <!-- Añado una barra lateral con los próximos partidos -->
+      <aside>
+        <h2 id="proximospartidos">Próximos partidos</h2>
+        <ul>
+          <li>
+            <strong
+              >Malaga CF
+              <img
+                src="./assets/img/malaga.png"
+                alt="escudo Málaga"
+                width="30"
+              />vs San Fernando CD
+              <img
+                src="./assets/img/sanfernando.jpg"
+                alt="escudo San Fernando"
+                width="28"
+              />
+            </strong>
+          </li>
+          <li>
+            <strong
+              >Real Madrid CF
+              <img
+                src="./assets/img/madrid.png"
+                alt="escudo Madrid"
+                width="35"
+              />vs FC Barcelona
+              <img
+                src="./assets/img/barcelona.webp"
+                alt="escudo Barcelona"
+                width="28"
+              />
+            </strong>
+          </li>
+          <li>
+            <strong
+              >Atlético de Madrid
+              <img
+                src="./assets/img/atletico.jpg"
+                alt="escudo Atlético de Madrid"
+                width="25"
+              />vs Sevilla CF
+              <img
+                src="./assets/img/sevilla.png"
+                alt="escudo Sevilla"
+                width="28"
+              />
+            </strong>
+          </li>
+        </ul>
+      </aside>
+      <!-- Formulario con datos personales y mensaje -->
       <form
         action="/"
         method="post"
@@ -120,6 +279,7 @@
       </form>
     </main>
 
+    <!-- Añado footer con información de contacto, copyright y enlaces a redes sociales -->
     <footer>
       <ul style="list-style-type: none">
         <li>987 765 432</li>
